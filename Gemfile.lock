@@ -50,22 +50,6 @@ GEM
     ast (2.4.2)
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
-    aws-eventstream (1.2.0)
-    aws-partitions (1.658.0)
-    aws-sdk-core (3.167.0)
-      aws-eventstream (~> 1, >= 1.0.2)
-      aws-partitions (~> 1, >= 1.651.0)
-      aws-sigv4 (~> 1.5)
-      jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.59.0)
-      aws-sdk-core (~> 3, >= 3.165.0)
-      aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.48.0)
-      aws-sdk-core (~> 3, >= 3.61.1)
-      aws-sdk-kms (~> 1)
-      aws-sigv4 (~> 1.1)
-    aws-sigv4 (1.5.2)
-      aws-eventstream (~> 1, >= 1.0.2)
     backport (1.2.0)
     bcrypt (3.1.18)
     benchmark (0.2.0)
@@ -120,7 +104,18 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jmespath (1.6.1)
+    kaminari (1.2.2)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.2)
+      kaminari-activerecord (= 1.2.2)
+      kaminari-core (= 1.2.2)
+    kaminari-actionview (1.2.2)
+      actionview
+      kaminari-core (= 1.2.2)
+    kaminari-activerecord (1.2.2)
+      activerecord
+      kaminari-core (= 1.2.2)
+    kaminari-core (1.2.2)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -310,7 +305,6 @@ PLATFORMS
   -darwin-21
 
 DEPENDENCIES
-  aws-sdk-s3 (= 1.48)
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.6)
@@ -321,6 +315,7 @@ DEPENDENCIES
   factory_bot_rails (~> 4.11)
   html2slim
   jbuilder (~> 2.5)
+  kaminari
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
   rails (~> 5.2.6)

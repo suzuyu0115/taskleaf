@@ -69,4 +69,4 @@ gem 'bootstrap', '~> 4.6'
 gem 'solargraph', group: :development
 gem 'rails_autolink'
 gem 'ransack'
-gem 'aws-sdk-s3', '1.48'
+gem 'kaminari'
